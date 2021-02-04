@@ -1,6 +1,30 @@
 <!DOCTYPE html>
 <html lang="it">
+<style>
+table{
+    margin-top: 20px;
+}
+button{
 
+    background-color: #cd3638;
+    border:2px solid #cd3638;
+    color: white;
+    outline: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 25px;    
+}
+input{
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    border:3px solid #cd3638;
+    width: 180px;
+    font-size: 30px;
+
+}
+</style>
 <head>
     <meta charset="UTF-8">
     <title>calcolatrice</title>
@@ -27,26 +51,36 @@
 <body>
         <div>
             <input type="text" id="num">
-            <br><br>
-            <button id="1" onclick="stampa(this.id)">1</button>
-            <button id="2" onclick="stampa(this.id)">2</button>
-            <button id="3" onclick="stampa(this.id)">3</button>
-            <button id="+" onclick="stampa(this.id)">+</button>
-            <br><br>
-            <button id="4" onclick="stampa(this.id)">4</button>
-            <button id="5" onclick="stampa(this.id)">5</button>
-            <button id="6" onclick="stampa(this.id)">6</button>
-            <button id="-" onclick="stampa()">-</button>
-            <br><br>
-            <button id="7" onclick="stampa(this.id)">7</button>
-            <button id="8" onclick="stampa(this.id)">8</button>
-            <button id="9" onclick="stampa(this.id)">9</button>
-            <button id="*" onclick="stampa()">x</button>
-            <br><br>
-            <button id="c" onclick="cancella()">C</button>
-            <button id="0" onclick="stampa(this.id)">0</button>
-            <button id="=" onclick="calcola()" class="uguale">=</button>
-            <button id="/" onclick="stampa()">/</button>
+            
+            <table>
+                <tr>
+                    <td><button id="1" onclick="stampa(this.id)">1</button></td>
+                    <td><button id="2" onclick="stampa(this.id)">2</button></td>
+                    <td><button id="3" onclick="stampa(this.id)">3</button></td>
+                    <td><button id="+" onclick="stampa(this.id)">+</button></td>
+                </tr>
+                
+                <tr>
+                    <td><button id="4" onclick="stampa(this.id)">4</button></td>
+                    <td><button id="5" onclick="stampa(this.id)">5</button></td>
+                    <td><button id="6" onclick="stampa(this.id)">6</button></td>
+                    <td><button id="-" onclick="stampa()">-</button></td>
+                </tr>
+                    
+                <tr>
+                    <td><button id="7" onclick="stampa(this.id)">7</button></td>
+                    <td><button id="8" onclick="stampa(this.id)">8</button></td>
+                    <td><button id="9" onclick="stampa(this.id)">9</button></td>
+                    <td><button id="*" onclick="stampa()">x</button></td>
+                </tr>
+                
+                <tr>    
+                    <td><button id="c" onclick="cancella()">C</button></td>
+                    <td><button id="0" onclick="stampa(this.id)">0</button></td>
+                    <td><button id="=" onclick="calcola()" class="uguale">=</button></td>
+                    <td><button id="/" onclick="stampa()">/</button></td>
+                </tr>    
+           </table>     
         </div>
 </body>
 
