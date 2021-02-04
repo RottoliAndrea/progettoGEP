@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="it">
+	<head>
+		<title>Calcolatrice</title>
+		<link rel="stylesheet" type="text/css" href="css/styleps.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+		<style>
+			.button {
+			  background-color: yellow;
+			  font-family:Courier New;
+			  font-weight: normal;
+			  border: none;
+			  color: black;
+			  padding: 15px 32px;
+			  text-align: center;
+			  text-decoration: none;
+			  display: inline-block;
+			  border-radius: 15px;
+			  font-size: 16px;
+			  margin: 4px 2px;
+			  cursor: pointer;
+			}
+			.button span {
+			  cursor: pointer;
+			  display: inline-block;
+			  position: relative;
+			  transition: 0.5s;
+			}
+
+			.button span:after {
+			  content: '\00bb';
+			  position: absolute;
+			  opacity: 0;
+			  top: 0;
+			  right: -20px;
+			  transition: 0.5s;
+			}
+
+			.button:hover span {
+			  padding-right: 25px;
+			}
+
+			.button:hover span:after {
+			  opacity: 1;
+			  right: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="header">
+				<div class="logo animated fadeInDownBig">
+					<img src="img/logo.png">
+				</div>
+				<div class="menu animated fadeInDownBig">
+					<ul>
+						
+						<li><a href="">HOME</a></li>
+						<li><a href="#">INFO</a></li>
+						<li><a href="#">GALLERY</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="name animated fadeInLeftBig">
+				<h1>Calcolatrice</h1><br>
+				<h5> Creato da:<br>Signorelli<br>Rottoli<br>Togni<br>Traini<br>Zampoleri</h5><br>
+				<button class="button" style="vertical-align:middle"><span>Vai alla calcolatrice</span></button>
+			</div>
+		</div>
+	</body> 
+</html>
