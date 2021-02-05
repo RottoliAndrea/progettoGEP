@@ -51,9 +51,10 @@ input{
     <title>calcolatrice</title>
 
     <script>
-
-        function calcola(tasto) {
-
+        function calcola() {
+            var totale=document.getElementById("num").value
+            totale=eval(totale);
+            document.getElementById("num").value = totale;
         }
 
         function stampa(numero) {
@@ -67,15 +68,13 @@ input{
             document.getElementById("num").value = "";
           
         }
-
-
     </script>
 
 </head>
 
 <body>
         <div>
-            <input type="text" id="num">
+            <input type="text" id="num" readonly>
             
             <table>
                 <tr>
@@ -89,24 +88,23 @@ input{
                     <td><button class="button" id="4" onclick="stampa(this.id)">4</button></td>
                     <td><button class="button" id="5" onclick="stampa(this.id)">5</button></td>
                     <td><button class="button" id="6" onclick="stampa(this.id)">6</button></td>
-                    <td><button class="button" id="-" onclick="stampa()">-</button></td>
+                    <td><button class="button" id="-" onclick="stampa(this.id)">-</button></td>
                 </tr>
                     
                 <tr>
                     <td><button class="button" id="7" onclick="stampa(this.id)">7</button></td>
                     <td><button class="button" id="8" onclick="stampa(this.id)">8</button></td>
                     <td><button class="button" id="9" onclick="stampa(this.id)">9</button></td>
-                    <td><button class="button" id="*" onclick="stampa()">x</button></td>
+                    <td><button class="button" id="*" onclick="stampa(this.id)">x</button></td>
                 </tr>
                 
-                <tr>    
-                    <td><button class="button" id="c" onclick="cancella()">C</button></td>
+                <tr>   
                     <td><button class="button" id="0" onclick="stampa(this.id)">0</button></td>
+                    <td><button class="button" id="c" onclick="cancella()">C</button></td>
                     <td><button class="button" id="=" onclick="calcola()" class="uguale">=</button></td>
                     <td><button class="button" id="/" onclick="stampa()">/</button></td>
                 </tr>    
            </table>     
         </div>
 </body>
-
 </html>
