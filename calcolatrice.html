@@ -42,7 +42,9 @@ input{
     <script>
 
         function calcola(tasto) {
-
+            var totale=document.getElementById("num").value
+            totale=eval(totale);
+            document.getElementById("num").value = totale;
         }
 
         function stampa(numero) {
